@@ -13,7 +13,8 @@ const RepoSingle = ({ repo }) => {
             {repo.name}
           </a>
           <div className="repodescription">
-            Description: {repo.description}{" "}
+            Description:{" "}
+            {repo.description ? repo.description : "No description"}
           </div>
         </h3>
       </div>
