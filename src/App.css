@@ -6,25 +6,19 @@
   text-decoration: none;
 }
 
-.App {
-  text-align: center;
-}
-
-.alert {
-  margin-top: 1em;
-  font-family:'Bebas Neue', cursive;
-}
-
-a {
-  text-decoration: none;
-  color: initial;
-}
-
+/* -------------NAVBAR & FOOTER-------------------- */
 .borders {
   background-color: black;
   color: white;
   text-align: center;
   width: 100%;
+}
+
+.navbar {
+  top: 0;
+  padding: 15px;
+  font-family:'Bebas Neue', cursive; 
+  font-size: 40px;
 }
 
 .footer {
@@ -34,13 +28,26 @@ a {
   font-family:'Bebas Neue', cursive; 
   font-size: 20px;
 }
-    
-.navbar {
-  top: 0;
-  padding: 15px;
-  font-family:'Bebas Neue', cursive; 
-  font-size: 40px;
+
+/* ----------------------------------------------------------------*/
+
+
+.alert {
+  text-align: center;
+  margin-top: 1em;
+  font-family:'Bebas Neue', cursive;
 }
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+
+
+
+    
+
 
 .searchbar {
   display: flex;

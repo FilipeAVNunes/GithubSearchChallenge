@@ -41,7 +41,12 @@ class Search extends Component {
             placeholder="Search Github Users"
             className="searchInput"
           />
-          <button type="submit" className="searchBtn" value="Search">
+          <button
+            id="searchBtn"
+            type="submit"
+            className="searchBtn"
+            value="Search"
+          >
             Search
           </button>
         </form>
