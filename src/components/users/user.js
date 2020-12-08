@@ -13,6 +13,8 @@ const User = (props) => {
     props.getUserRepos(props.match.params.login);
   }, []);
 
+  // eslint error, with the research I've made, I couldn't find any option that would allow this error to disappear.
+
   User.propTypes = {
     loading: PropTypes.bool.isRequired,
     user: PropTypes.object.isRequired,
