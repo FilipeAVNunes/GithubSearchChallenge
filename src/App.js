@@ -7,7 +7,7 @@ import Users from "./components/users/users";
 import Search from "./components/users/search";
 import Alert from "./components/layout/Alert";
 import User from "./components/users/user";
-import "./App.css";
+import "./styles/App.scss";
 
 class App extends React.Component {
   state = {

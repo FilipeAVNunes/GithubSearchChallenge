@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "../../styles/App.scss";
 
 const Alert = ({ alert }) => {
   return alert !== null && <div className="alert">{alert.msg}</div>;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import "../../App.css";
+import "../../styles/App.scss";
 
 class Search extends Component {
   state = {

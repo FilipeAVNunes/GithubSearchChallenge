@@ -1,0 +1,242 @@
+@import './variables/fonts.scss';
+@import './variables/colors.scss';
+@import './variables/font-sizes.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+
+/* -------------NAVBAR & FOOTER-------------------- */
+.borders {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar {
+  top: 0;
+  padding: 15px;
+  font-family: $global-font;
+  font-size: $font-size-40;
+}
+
+.footer {
+  margin-top: 15px;
+  padding: 15px;
+  position: absolute;
+  font-family: $global-font; 
+  font-size: $font-size-20;
+}
+
+/* -------------------------- ALERT -----------------------------------*/
+
+
+.alert {
+  text-align: center;
+  margin-top: 1em;
+  font-family: $global-font;
+}
+
+/* -------------------------- REPOS -----------------------------------*/
+
+.repos {
+  padding: 1rem;
+  margin: 1rem 1rem;
+  
+  a {
+    font-family: $global-font;
+    font-size: $font-size-25;
+  }
+  
+  .repodescription {
+    font-family: $repo-description-font;
+  }
+}
+
+/* -------------------------- SEARCHBAR -----------------------------------*/
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  
+  .searchInput {
+    border: 1px solid $lightgrey;
+    padding: 10px 20px;
+  }
+  
+  .searchInput::-webkit-input-placeholder {
+    font-family: $global-font;
+    font-size: $font-size-15;
+  }
+  
+  .searchInput:-ms-input-placeholder {
+    font-family: $global-font;
+    font-size: $font-size-15;
+  }
+  
+  .searchInput:-moz-placeholder {
+    font-family: $global-font;
+    font-size: $font-size-15;
+  }
+  
+  .searchInput::-moz-placeholder {
+    font-family: $global-font;
+    font-size: $font-size-15;
+  }
+  
+  .searchBtn {
+    border: 0.1em solid $lightgrey;
+    font-family: $global-font;
+    font-size: $font-size-15;
+    text-decoration: none;
+    transition: all 0.2s;
+    padding:0.51em 1.2em;
+    background-color: $white;
+    cursor: pointer;
+    
+    &:hover {
+      color: $white;
+      background-color: $black;
+      border: 0.1em solid $black;
+    }
+  }
+}
+
+/* -------------------------- USER&USERITEM -----------------------------------*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto auto 20px;
+  text-align: center;
+  
+  .title {
+    color: $black;
+    font-family: $title-font;
+    font-size: $font-size-17;
+    margin: 0 3px;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+/* -------------------------- USERITEM -----------------------------------*/
+
+.visit-smaller {
+  font-family: $global-font;
+  font-size: $font-size-17;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: initial;
+  border: 1px solid $black;
+  padding: 5px;
+  margin: 5px 0; 
+  
+  &:hover {
+    color: $white;
+    background-color: $black;
+    border: 1px solid $black;
+  }
+}
+
+/* -------------------------- USERS -----------------------------------*/
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+/* -------------------------- USER -----------------------------------*/
+
+.back {
+  text-align: right;
+  margin: 5px 5px 0 0 ;
+}
+
+.visit {
+  font-family: $global-font;
+  font-size: $font-size-30;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: initial;
+  border: 1px solid $black;
+  padding: 5px;
+  margin: 5px 0; 
+  
+  &:hover {
+    color: $white;
+    background-color: $black;
+    border: 1px solid $black;
+  }
+}
+
+.repolist {
+  margin: 2rem;
+  font-family: $global-font;
+  font-size: $font-size-40;
+  text-decoration: underline;
+}
+
+
+/* -------------------------- @MEDIA -----------------------------------*/
+
+@media (max-width: 1020px) {
+  .users {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 615px) {
+  .users {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 415px) {
+  .users {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 315px) {
+  .searchbar {
+    margin: 5px;
+
+    .searchInput {
+      padding: 10px 3px;
+    }
+  }
+
+  .card {
+    max-width: 200px;
+    
+    img {
+      max-width: 200px;
+    }
+  }
+  
+  .visit {
+    font-size: $font-size-20;
+  }
+}

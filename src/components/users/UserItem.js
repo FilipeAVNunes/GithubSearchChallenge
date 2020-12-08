@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-import "../../App.css";
+import "../../styles/App.scss";
 
 const UserItem = ({ user: { login, avatar_url } }) => {
   return (
@@ -10,7 +10,7 @@ const UserItem = ({ user: { login, avatar_url } }) => {
       <img src={avatar_url} alt="avatar" />
       <h3 className="title">{login}</h3>
       <div>
-        <Link to={`/user/${login}`} className="visitsmaller">
+        <Link to={`/user/${login}`} className="visit-smaller">
           Check Profile
         </Link>
       </div>

@@ -3,7 +3,7 @@ import Loading from "../layout/Loading";
 import UserItem from "./UserItem";
 import PropTypes from "prop-types";
 
-import "../../App.css";
+import "../../styles/App.scss";
 
 const Users = ({ users, loading }) => {
   if (loading) {
